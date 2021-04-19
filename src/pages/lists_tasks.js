@@ -174,7 +174,7 @@ function LISTS_TASKS() {
                                             <hr />
                                         </div>
                                         <div className="tasks">
-                                            {tasks_list.steps.map(step => {
+                                            {tasks_list.steps.slice(0, 5).map(step => {
                                                 return (
                                                     <div className="task" key={step.id}>
                                                         {step.done ? <div className="checkbox done"></div> : <div className="checkbox"></div>}

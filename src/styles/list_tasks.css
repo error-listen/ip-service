@@ -49,7 +49,7 @@ a{
 .list_tasks_container main .tasks .task{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 25px;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -82,7 +82,7 @@ a{
 }
 
 .list_tasks_container .open_modal_add_step{
-    position: absolute;
+    position: fixed;
     bottom: 90px;
     right: 16px;
     width: 60px;
@@ -93,6 +93,7 @@ a{
     font-size: 30px;
     color: #FFFFFFFF;
     transition: background-color 0.5s;
+    z-index: 10;
 }
 
 .list_tasks_container .open_modal_add_step:active{

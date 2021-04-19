@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState,Fragment } from 'react';
 
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import SwipeableViews from 'react-swipeable-views';
@@ -144,11 +144,13 @@ function LIST_TASKS({ history, match }) {
     }
 
     return (
+        <div>
         <div className="list_tasks_container">
             <span style={{ position: 'absolute', top: 25, right: 28, fontSize: 25 }} onClick={() => open_modal(modal_list_info)}><img src="https://img.icons8.com/cotton/34/000000/info--v1.png" /></span>
             <span style={{ position: 'absolute', top: 25, left: 28, fontSize: 25 }} onClick={() => history.push('/')}><img src="https://img.icons8.com/android/24/000000/back.png" alt="Back" /></span>
             {is_loading()}
             <ToastContainer />
+            {first_list_obj !== undefined ? <button className="open_modal_add_step" onClick={() => open_modal(modal_add_step_ref)} style={{ backgroundColor: current_list.color !== undefined ? current_list.color : first_list_obj.color }}>+</button> : null}
             <MODAL_LIST_INFO close={(e) => handle_close_modal(modal_list_info, e)} refer_modal_list_info={modal_list_info}
                 color={current_list.color !== undefined ? current_list.color : first_list_obj.color}
                 service_name={current_list.service_name !== undefined ? current_list.service_name : first_list_obj.service_name}
@@ -240,7 +242,8 @@ function LIST_TASKS({ history, match }) {
                     );
                 })}
             </SwipeableViews>
-            {first_list_obj !== undefined ? <button className="open_modal_add_step" onClick={() => open_modal(modal_add_step_ref)} style={{ backgroundColor: current_list.color !== undefined ? current_list.color : first_list_obj.color }}>+</button> : null}
+        </div>
+            
         </div>
     );
 }
