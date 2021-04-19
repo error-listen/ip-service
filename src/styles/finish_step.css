@@ -1,0 +1,167 @@
+.finish_step{
+    padding: 20px;
+}
+
+.finish_step form{
+    margin-top: 20px;
+}
+
+.finish_step form .row{
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+}
+
+.finish_step form textarea{
+    height: 150px;
+    resize: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #D3D3D3;
+    outline: none;
+    margin-top: 10px;
+}
+
+.finish_step form textarea:focus{
+    border: 1px solid #4169E1;
+}
+
+.finish_step form input{
+    height: 40px;
+    resize: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #D3D3D3;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.finish_step form input:focus{
+    border: 1px solid #4169E1;
+}
+
+.finish_step form .files input[type="file"] {
+    display: none;
+}
+
+.finish_step form .files label {
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #4169E1;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.finish_step form .files label:active{
+    opacity: 0.5;
+}
+
+.finish_step form .file_name:first-child{
+    margin-top: 15px;
+}
+
+.finish_step form .file_container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finish_step form .file_container .file_name{
+    font-size: 13px;
+    color: #808080;
+}
+
+.finish_step form span{
+    font-size: 15px;
+    margin-top: 15px;
+    color: #808080;
+}
+
+.finish_step form  .signature_text{
+    margin-top: 20px;
+}
+
+.finish_step form .sig_canvas{
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.finish_step form .button_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.finish_step form .button_clear_signature{
+    border: none;
+    color: #4169E1;
+    background-color: #FFFFFF;
+    padding: 5px;;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 17px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.finish_step form .button_clear_signature:active{
+    opacity: 0.5;
+}
+
+.finish_step form .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.finish_step form .button_cancel_finish_step{
+    border: none;
+    color: #4169E1;
+    background-color: #FFFFFF;
+    padding: 5px;;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 17px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.finish_step form .button_cancel_finish_step:active{
+    opacity: 0.5;
+}
+
+.finish_step form .button_finish_step{
+    border: none;
+    color: #4169E1;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFFFFF;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.finish_step form .button_finish_step:active{
+    opacity: 0.5;
+}

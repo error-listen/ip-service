@@ -1,0 +1,113 @@
+a{
+    text-decoration: none;
+}
+
+.lists_tasks_container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.lists_tasks_container header .button_add_list{
+    background-color: #FFFFFF;
+    border: 1px dashed #808080;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 20px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+} 
+
+.lists_tasks_container header .button_add_list:active{
+    opacity: 0.5;
+}
+
+.lists_tasks_container header .add_list_text{
+    font-size: 13px;
+    color: #808080;
+    margin-top: 10px;
+}
+
+.lists_tasks_container main{
+    padding: 10px;
+}
+
+.lists_tasks_container main .lists {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.lists_tasks_container main .lists::-webkit-scrollbar {
+    display: none;
+}
+
+.lists_tasks_container main .lists {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+
+.lists_tasks_container main .list {
+    min-width: 150px;
+    height: 250px;
+    border-radius: 5px;
+    text-align: start;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #FFFFFF;
+}
+
+.lists_tasks_container main .list:active {
+   opacity: 0.5;
+}
+
+.lists_tasks_container main .list .list_header{
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.lists_tasks_container main .list .list_header hr{
+    border: none;
+    border: 1px solid #FFFFFF;
+}
+
+.lists_tasks_container main .list .tasks {
+    margin-top: 15px;
+}
+
+.lists_tasks_container main .list .tasks .task{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    position: relative;
+}
+
+.lists_tasks_container main .list .tasks .task .checkbox{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.lists_tasks_container main .list .tasks .task .done{
+    opacity: 0;
+}
+
+.lists_tasks_container main .list .tasks .task .task_name{
+    font-size: 14px;
+}
+
+.lists_tasks_container main .no_lists{
+    margin-top: 150px;
+}
+
+
+
